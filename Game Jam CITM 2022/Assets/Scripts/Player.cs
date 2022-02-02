@@ -12,8 +12,9 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject proyectile;
     public Vector2 speed = new Vector2 (5,5);
-    public bool canJump = true;
-
+    private bool canJump = true;
+    public bool hasSteamWeapon = true;
+    private bool canSteamJump = true;
     lookingAt orientation = lookingAt.RIGHT;
     
     
@@ -39,11 +40,20 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(-speed.x, rb.velocity.y);
             orientation = lookingAt.LEFT;
         }
-        if (Input.GetKey("space") && canJump)
+        if (Input.GetKeyDown("space"))
         {
-            rb.velocity = new Vector2(rb.velocity.x, speed.y);
-            canJump = false;
+            if (canJump)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, speed.y);
+                canJump = false;
+            }
+           else if (canSteamJump)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, speed.y * 2f);
+                canSteamJump = false;
+            }
         }
+        
         if(Input.GetMouseButtonDown(0))
         {
             if(orientation == lookingAt.RIGHT)
@@ -59,7 +69,11 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground") canJump = true;
+        if (collision.gameObject.tag == "Ground")
+        {
+            canJump = true;
+            if (hasSteamWeapon) canSteamJump = true;
+        }
     }
     public Vector2 GetPosition()
     {
