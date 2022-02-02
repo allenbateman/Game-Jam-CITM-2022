@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-enum lookingAt
+public enum lookingAt
 {
     RIGHT,
     LEFT

@@ -9,6 +9,8 @@ public class proyectile : MonoBehaviour
     public int secondsToDestroy = 3;
     private Rigidbody2D rb;
     private float deathTimer;
+    [SerializeField]
+    int damage;
 
     void Start()
     {
@@ -35,5 +37,12 @@ public class proyectile : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Enemy")
+            collision.transform.GetComponent<Enemy>().TakeDamage(damage);
+
+        Destroy(gameObject);
     }
 }

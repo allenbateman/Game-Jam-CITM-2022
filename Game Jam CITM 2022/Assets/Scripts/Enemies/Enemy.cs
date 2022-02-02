@@ -14,8 +14,8 @@ public enum EnemyState
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField]
-    Rigidbody2D body;
+    protected Rigidbody2D body;
+    protected SpriteRenderer renderer;
     protected EnemyState  state;
     [SerializeField]
     protected int hitPoints;
@@ -25,6 +25,12 @@ public class Enemy : MonoBehaviour
     protected float attackCD;
     [SerializeField]
     protected float detectionDistance;
+    [SerializeField]
+    protected List<Transform> patrolPoints;
+
+    protected int currentPatrolPoint;
+
+    protected int orientation;
 
     public void TakeDamage(int amount)
     {
@@ -34,6 +40,11 @@ public class Enemy : MonoBehaviour
 
     }
 
+    protected virtual void Move()
+    { 
+
+    }
+    
     protected virtual void Follow()
     {
 
@@ -51,7 +62,9 @@ public class Enemy : MonoBehaviour
 
     protected virtual void Die()
     {
-
+        //when finish death animation 
+        Debug.Log("Im dead");
+        Destroy(gameObject);
     }
 
 }
