@@ -32,6 +32,13 @@ public class Enemy : MonoBehaviour
 
     protected int orientation;
 
+    protected bool DoDamage;
+    protected bool IsFrozen;
+
+    public void OnBulletHit(proyectile p)
+    {
+    }
+
     public void TakeDamage(int amount)
     {
         hitPoints -= amount;
@@ -64,7 +71,12 @@ public class Enemy : MonoBehaviour
     {
         //when finish death animation 
         Debug.Log("Im dead");
+        Destroy(transform.parent.gameObject);
         Destroy(gameObject);
     }
 
+    protected virtual IEnumerator Wait(float time)
+    {
+        yield return new WaitForSeconds(time);
+    }
 }

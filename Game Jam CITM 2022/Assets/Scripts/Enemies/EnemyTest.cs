@@ -19,10 +19,11 @@ public class EnemyTest : Enemy
     // Update is called once per frame
     void Update()
     {
-       
+        Debug.Log(state);
         switch (state)
         {
             case EnemyState.IDLE:
+                StartCoroutine(Wait(1));
                 break;
             case EnemyState.PATROL:
                 Move();
@@ -58,17 +59,26 @@ public class EnemyTest : Enemy
 
     protected override void Patrol()
     {
-        //float dist = Vector2.Distance(transform.position, patrolPoints[currentPatrolPoint].position);
+   
         float dist = transform.position.x - patrolPoints[currentPatrolPoint].position.x;
-        Debug.Log(dist);
+
         if (dist < 0.1f  && dist > -0.1f)
         {
+          
             orientation *= -1;
             currentPatrolPoint++;
             if(currentPatrolPoint >= patrolPoints.Count)
             {
                 currentPatrolPoint = 0;
             }
+            state = EnemyState.IDLE;
         }
+    }
+
+    protected override IEnumerator Wait(float time)
+    {
+   
+        yield return new WaitForSeconds(time);
+        state = EnemyState.PATROL;
     }
 }
