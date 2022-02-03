@@ -11,9 +11,10 @@ public class EnemyTest : Enemy
     {
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
         state = EnemyState.PATROL;
         currentPatrolPoint = 0;
-        orientation = -1;
+        GetOrientation();
     }
 
     // Update is called once per frame
@@ -34,8 +35,7 @@ public class EnemyTest : Enemy
             case EnemyState.ATTACK:
                 break;
             case EnemyState.DEAD:
-                //when dead anim finishes
-                Die();
+                anim.SetBool("Dead", true);
                 break;
             default:
                 break;
@@ -44,15 +44,16 @@ public class EnemyTest : Enemy
 
     protected override void Move()
     {
-        if(orientation == 1)
+        GetOrientation();
+        if (orientation == 1)
         {
-            renderer.flipX = false;
+            renderer.flipX = true;
             body.velocity = new Vector2(speed * orientation, 0);
 
         }
         else if(orientation == -1)
         {
-            renderer.flipX = true;
+            renderer.flipX = false;
             body.velocity = new Vector2(speed * orientation, 0);
         }
     }
@@ -80,5 +81,17 @@ public class EnemyTest : Enemy
    
         yield return new WaitForSeconds(time);
         state = EnemyState.PATROL;
+    }
+
+    void  GetOrientation()
+    {
+        float dist = patrolPoints[currentPatrolPoint].position.x - transform.position.x;
+        if(dist < 0)
+        {
+            orientation = -1;
+        }else if(dist > 0)
+        {
+            orientation = 1;
+        }
     }
 }

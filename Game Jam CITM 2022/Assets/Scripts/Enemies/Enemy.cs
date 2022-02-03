@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
 {
     protected Rigidbody2D body;
     protected SpriteRenderer renderer;
+    protected Animator anim;
     protected EnemyState  state;
     [SerializeField]
     protected int hitPoints;
