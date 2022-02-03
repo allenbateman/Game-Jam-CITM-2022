@@ -24,7 +24,7 @@ public class EnemyTest : Enemy
         switch (state)
         {
             case EnemyState.IDLE:
-                StartCoroutine(Wait(1));
+                StartCoroutine(Wait(2));
                 break;
             case EnemyState.PATROL:
                 Move();
@@ -36,6 +36,7 @@ public class EnemyTest : Enemy
                 break;
             case EnemyState.DEAD:
                 anim.SetBool("Dead", true);
+
                 break;
             default:
                 break;
@@ -73,14 +74,18 @@ public class EnemyTest : Enemy
                 currentPatrolPoint = 0;
             }
             state = EnemyState.IDLE;
+            anim.SetBool("Idle", true);
+            anim.SetBool("Patrol", false);
         }
     }
 
     protected override IEnumerator Wait(float time)
     {
-   
+
         yield return new WaitForSeconds(time);
         state = EnemyState.PATROL;
+        anim.SetBool("Idle", false);
+        anim.SetBool("Patrol", true);
     }
 
     void  GetOrientation()
