@@ -14,25 +14,42 @@ public class Player : MonoBehaviour
     public GameObject proyectile;
     public GameObject IceProyectile;
     public GameObject FireProyectile;
+
     public Vector2 speed = new Vector2 (5,5);
     private bool canJump = true;
     public bool hasSteamWeapon = true;
     private bool canSteamJump = true;
+
     lookingAt orientation = lookingAt.RIGHT;
     public bulletType currentBullet = bulletType.DEFAULT;
-    
+
+    public float bulletSwapCoolDown;
+    private float bulletSwapTimer;
+
+    public float defaultBulletCoolDown;
+    private float defaultBulletTimer;
+
+    public float iceBulletCoolDown;
+    private float iceBulletTimer;
+
+    public float fireBulletCoolDown;
+    private float fireBulletTimer;
    
     
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        
+        bulletSwapTimer = bulletSwapCoolDown;
     }
 
    
     void Update()
     {
-        
+       if(bulletSwapTimer > 0) bulletSwapTimer -= Time.deltaTime;
+       if (defaultBulletTimer > 0) defaultBulletTimer -= Time.deltaTime;
+       if (iceBulletTimer > 0) iceBulletTimer -= Time.deltaTime;
+        if (fireBulletTimer > 0) fireBulletTimer -= Time.deltaTime;
+
         if (Input.GetKey("d"))
         {
             rb.velocity = new Vector2(speed.x,rb.velocity.y);
@@ -63,15 +80,15 @@ public class Player : MonoBehaviour
         }
         if(Input.GetKeyDown("1"))
         {
-            currentBullet = bulletType.DEFAULT;
+            SwapBullet(bulletType.DEFAULT);
         }
         if (Input.GetKeyDown("2"))
         {
-            currentBullet = bulletType.ICE;
+            SwapBullet(bulletType.ICE);
         }
         if (Input.GetKeyDown("3"))
         {
-            currentBullet = bulletType.FIRE;
+            SwapBullet(bulletType.FIRE);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -88,34 +105,67 @@ public class Player : MonoBehaviour
         {
             if (bullet == bulletType.DEFAULT)
             {
-                Instantiate(proyectile, new Vector2(gameObject.transform.position.x + 2, gameObject.transform.position.y), Quaternion.identity);
+                if(defaultBulletTimer <= 0)
+                {
+                    Instantiate(proyectile, new Vector2(gameObject.transform.position.x + 2, gameObject.transform.position.y), Quaternion.identity);
+                    defaultBulletTimer = defaultBulletCoolDown;
+                }
+                
             }
             if(bullet == bulletType.ICE)
             {
-                Instantiate(IceProyectile, new Vector2(gameObject.transform.position.x + 2, gameObject.transform.position.y), Quaternion.identity);
+                if (iceBulletTimer <= 0)
+                {
+                    Instantiate(IceProyectile, new Vector2(gameObject.transform.position.x + 2, gameObject.transform.position.y), Quaternion.identity);
+                    iceBulletTimer = iceBulletCoolDown;
+                }
             }
             if (bullet == bulletType.FIRE)
             {
-                Instantiate(FireProyectile, new Vector2(gameObject.transform.position.x + 2, gameObject.transform.position.y), Quaternion.identity);
+                if (fireBulletTimer <= 0)
+                {
+                    Instantiate(FireProyectile, new Vector2(gameObject.transform.position.x + 2, gameObject.transform.position.y), Quaternion.identity);
+                    fireBulletTimer = fireBulletCoolDown;
+                }
             }
         }
         if (direction == lookingAt.LEFT)
         {
             if (bullet == bulletType.DEFAULT)
             {
-                Instantiate(proyectile, new Vector2(gameObject.transform.position.x - 2, gameObject.transform.position.y), Quaternion.identity);
+                if(defaultBulletTimer <= 0)
+                {
+                    Instantiate(proyectile, new Vector2(gameObject.transform.position.x - 2, gameObject.transform.position.y), Quaternion.identity);
+                    defaultBulletTimer = defaultBulletCoolDown;
+                }
             }
             if (bullet == bulletType.ICE)
             {
-                Instantiate(IceProyectile, new Vector2(gameObject.transform.position.x - 2, gameObject.transform.position.y), Quaternion.identity);
+                if(iceBulletTimer <= 0)
+                {
+                    Instantiate(IceProyectile, new Vector2(gameObject.transform.position.x - 2, gameObject.transform.position.y), Quaternion.identity);
+                    iceBulletTimer = iceBulletCoolDown;
+                }
             }
             if (bullet == bulletType.FIRE)
             {
-                Instantiate(FireProyectile, new Vector2(gameObject.transform.position.x - 2, gameObject.transform.position.y), Quaternion.identity);
+                if(fireBulletTimer <= 0)
+                {
+                    Instantiate(FireProyectile, new Vector2(gameObject.transform.position.x - 2, gameObject.transform.position.y), Quaternion.identity);
+                    fireBulletTimer = fireBulletCoolDown;
+                }
             }
         }
 
 
 
+    }
+    private void SwapBullet(bulletType type)
+    {
+        if (bulletSwapTimer <= 0)
+        {
+            currentBullet = type;
+            bulletSwapTimer = bulletSwapCoolDown;
+        }
     }
 }
