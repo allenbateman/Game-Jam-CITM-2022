@@ -7,6 +7,7 @@ public enum EnemyState
 {
    IDLE,
    PATROL,
+   FROZEN,
    FOLLOW,
    ATTACK,
    DEAD

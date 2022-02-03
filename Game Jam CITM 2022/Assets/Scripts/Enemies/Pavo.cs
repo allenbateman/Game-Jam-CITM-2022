@@ -4,7 +4,7 @@ using UnityEngine;
 
 [System.Serializable]
 
-public class EnemyTest : Enemy
+public class Pavo : Enemy
 {
     // Start is called before the first frame update
     void Start()
@@ -20,12 +20,17 @@ public class EnemyTest : Enemy
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(state);
         switch (state)
         {
             case EnemyState.IDLE:
                 StartCoroutine(Wait(2));
                 break;
             case EnemyState.PATROL:
+                Move();
+                Patrol();
+                break;
+            case EnemyState.FROZEN:
                 break;
             case EnemyState.FOLLOW:
                 break;
@@ -33,7 +38,6 @@ public class EnemyTest : Enemy
                 break;
             case EnemyState.DEAD:
                 anim.SetBool("Dead", true);
-
                 break;
             default:
                 break;
@@ -49,7 +53,7 @@ public class EnemyTest : Enemy
             body.velocity = new Vector2(speed * orientation, 0);
 
         }
-        else if(orientation == -1)
+        else if (orientation == -1)
         {
             renderer.flipX = false;
             body.velocity = new Vector2(speed * orientation, 0);
@@ -58,15 +62,15 @@ public class EnemyTest : Enemy
 
     protected override void Patrol()
     {
-   
+
         float dist = transform.position.x - patrolPoints[currentPatrolPoint].position.x;
 
-        if (dist < 0.1f  && dist > -0.1f)
+        if (dist < 0.1f && dist > -0.1f)
         {
-          
+
             orientation *= -1;
             currentPatrolPoint++;
-            if(currentPatrolPoint >= patrolPoints.Count)
+            if (currentPatrolPoint >= patrolPoints.Count)
             {
                 currentPatrolPoint = 0;
             }
@@ -85,13 +89,14 @@ public class EnemyTest : Enemy
         anim.SetBool("Patrol", true);
     }
 
-    void  GetOrientation()
+    void GetOrientation()
     {
         float dist = patrolPoints[currentPatrolPoint].position.x - transform.position.x;
-        if(dist < 0)
+        if (dist < 0)
         {
             orientation = -1;
-        }else if(dist > 0)
+        }
+        else if (dist > 0)
         {
             orientation = 1;
         }
