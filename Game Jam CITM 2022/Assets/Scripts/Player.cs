@@ -7,16 +7,19 @@ public enum lookingAt
     RIGHT,
     LEFT
 };
+
 public class Player : MonoBehaviour
 {
     public Rigidbody2D rb;
     public GameObject proyectile;
+    public GameObject IceProyectile;
+    public GameObject FireProyectile;
     public Vector2 speed = new Vector2 (5,5);
     private bool canJump = true;
     public bool hasSteamWeapon = true;
     private bool canSteamJump = true;
     lookingAt orientation = lookingAt.RIGHT;
-    
+    public bulletType currentBullet = bulletType.DEFAULT;
     
    
     
@@ -47,8 +50,8 @@ public class Player : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, speed.y);
                 canJump = false;
             }
-           else if (canSteamJump)
-            {
+            else if (canSteamJump)
+            { 
                 rb.velocity = new Vector2(rb.velocity.x, speed.y * 2f);
                 canSteamJump = false;
             }
@@ -56,15 +59,19 @@ public class Player : MonoBehaviour
         
         if(Input.GetMouseButtonDown(0))
         {
-            if(orientation == lookingAt.RIGHT)
-            {
-                Instantiate(proyectile, new Vector2(gameObject.transform.position.x + 2, gameObject.transform.position.y), Quaternion.identity);
-            }
-           if(orientation == lookingAt.LEFT)
-            {
-                Instantiate(proyectile, new Vector2(gameObject.transform.position.x - 2, gameObject.transform.position.y), Quaternion.identity);
-            }
-            
+             Shoot(currentBullet, orientation);
+        }
+        if(Input.GetKeyDown("1"))
+        {
+            currentBullet = bulletType.DEFAULT;
+        }
+        if (Input.GetKeyDown("2"))
+        {
+            currentBullet = bulletType.ICE;
+        }
+        if (Input.GetKeyDown("3"))
+        {
+            currentBullet = bulletType.FIRE;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -75,10 +82,40 @@ public class Player : MonoBehaviour
             if (hasSteamWeapon) canSteamJump = true;
         }
     }
-    public Vector2 GetPosition()
+    private void Shoot(bulletType bullet, lookingAt direction)
     {
-        Vector2 ret = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
-        
-        return ret;
+        if(direction == lookingAt.RIGHT)
+        {
+            if (bullet == bulletType.DEFAULT)
+            {
+                Instantiate(proyectile, new Vector2(gameObject.transform.position.x + 2, gameObject.transform.position.y), Quaternion.identity);
+            }
+            if(bullet == bulletType.ICE)
+            {
+                Instantiate(IceProyectile, new Vector2(gameObject.transform.position.x + 2, gameObject.transform.position.y), Quaternion.identity);
+            }
+            if (bullet == bulletType.FIRE)
+            {
+                Instantiate(FireProyectile, new Vector2(gameObject.transform.position.x + 2, gameObject.transform.position.y), Quaternion.identity);
+            }
+        }
+        if (direction == lookingAt.LEFT)
+        {
+            if (bullet == bulletType.DEFAULT)
+            {
+                Instantiate(proyectile, new Vector2(gameObject.transform.position.x - 2, gameObject.transform.position.y), Quaternion.identity);
+            }
+            if (bullet == bulletType.ICE)
+            {
+                Instantiate(IceProyectile, new Vector2(gameObject.transform.position.x - 2, gameObject.transform.position.y), Quaternion.identity);
+            }
+            if (bullet == bulletType.FIRE)
+            {
+                Instantiate(FireProyectile, new Vector2(gameObject.transform.position.x - 2, gameObject.transform.position.y), Quaternion.identity);
+            }
+        }
+
+
+
     }
 }
