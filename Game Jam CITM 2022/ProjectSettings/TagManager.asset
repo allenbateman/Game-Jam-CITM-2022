@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Proyectile
+  - Ground
+  - Enemy
+  - Scene_Manager
   layers:
   - Default
   - TransparentFX

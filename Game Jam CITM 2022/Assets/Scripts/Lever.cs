@@ -29,4 +29,8 @@ public class Lever : MonoBehaviour
             }
         }
     }
+    public void ResetState()
+    {
+        isActive = false;
+    }
 }

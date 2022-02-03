@@ -145,5 +145,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 0}
-  activationDistance: 3
+  activationDistance: 1
   isActive: 0

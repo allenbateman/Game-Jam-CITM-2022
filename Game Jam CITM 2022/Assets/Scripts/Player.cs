@@ -15,24 +15,24 @@ public class Player : MonoBehaviour
     public GameObject IceProyectile;
     public GameObject FireProyectile;
 
-    public Vector2 speed = new Vector2 (5,5);
+    private Vector2 speed = new Vector2 (5,7);
     private bool canJump = true;
-    public bool hasSteamWeapon = true;
-    private bool canSteamJump = true;
+    public bool hasSteamWeapon = false;
+    private bool canSteamJump = false;
 
     lookingAt orientation = lookingAt.RIGHT;
     public bulletType currentBullet = bulletType.DEFAULT;
 
-    public float bulletSwapCoolDown;
+    public float bulletSwapCoolDown = 1;
     private float bulletSwapTimer;
 
-    public float defaultBulletCoolDown;
+    public float defaultBulletCoolDown = 0.25f;
     private float defaultBulletTimer;
 
-    public float iceBulletCoolDown;
+    public float iceBulletCoolDown = 1.5f;
     private float iceBulletTimer;
 
-    public float fireBulletCoolDown;
+    public float fireBulletCoolDown = 0.5f;
     private float fireBulletTimer;
    
     
@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
             }
             else if (canSteamJump)
             { 
-                rb.velocity = new Vector2(rb.velocity.x, speed.y * 2f);
+                rb.velocity = new Vector2(rb.velocity.x, speed.y * 1.5f);
                 canSteamJump = false;
             }
         }
