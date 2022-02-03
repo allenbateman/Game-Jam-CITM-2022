@@ -53,14 +53,7 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Enemies\EnemyTest.cs" />
-    <Compile Include="Assets\Scripts\Parallax.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\DrawGizmos.cs" />
-    <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
-    <Compile Include="Assets\Ice_Proyectile.cs" />
-    <Compile Include="Assets\Scripts\proyectile.cs" />
-    <Compile Include="Assets\Scripts\CameraMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
