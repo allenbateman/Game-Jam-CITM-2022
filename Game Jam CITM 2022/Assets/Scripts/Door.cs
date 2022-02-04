@@ -7,7 +7,8 @@ public class Door : MonoBehaviour
     public bool isActive = false;
     [SerializeField]
     Vector2 originalPos;
-    private float offsetDistance = 10;
+    [SerializeField]
+    float offsetDistance = 10;
     float speed = 0.1f;
     private bool reseting = false;
     void Start()
@@ -20,15 +21,15 @@ public class Door : MonoBehaviour
     {
         if(isActive && gameObject.transform.position.y < originalPos.y + offsetDistance)
         {
-            gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + speed);
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + speed, 1);
         }
         if(!isActive && gameObject.transform.position.y > originalPos.y)
         {
-            gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - speed);
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - speed, 1);
         }
         if(reseting && gameObject.transform.position.y > originalPos.y)
         {
-            gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - speed);
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - speed, 1);
             if ((Vector2)gameObject.transform.position == originalPos) reseting = false;
         }
     }

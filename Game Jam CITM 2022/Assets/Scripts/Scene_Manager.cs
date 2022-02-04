@@ -9,7 +9,7 @@ public enum EScenes
     LEVEL_SELECTION,
     FACTORY_1,
     MARKET_1,
-    ENGINE_1
+    POWER_PLANT_1
 }
 public class Scene_Manager : MonoBehaviour
 {

@@ -145,6 +145,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2155024469995450142}
-  proyectile: {fileID: 0}
-  speed: {x: 5, y: 5}
-  canJump: 1
+  proyectile: {fileID: 1360290910212516000, guid: 5189443ccbf8b994d93fb3481d0cce57, type: 3}
+  IceProyectile: {fileID: 0}
+  FireProyectile: {fileID: 0}
+  hasSteamWeapon: 1
+  currentBullet: 0
+  bulletSwapCoolDown: 1
+  defaultBulletCoolDown: 0.25
+  iceBulletCoolDown: 1.5
+  fireBulletCoolDown: 0.5

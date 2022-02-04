@@ -105,7 +105,7 @@ public class Player : MonoBehaviour
             }
             else if (canSteamJump)
             { 
-                rb.velocity = new Vector2(rb.velocity.x, speed.y * 1.5f);
+                rb.velocity = new Vector2(rb.velocity.x, speed.y);
                 OnAir = true;
                 canSteamJump = false;
             }
@@ -115,6 +115,7 @@ public class Player : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             ShootAnim((int)currentBullet);
+            Shoot();
         }
         if(Input.GetKeyDown("1"))
         {

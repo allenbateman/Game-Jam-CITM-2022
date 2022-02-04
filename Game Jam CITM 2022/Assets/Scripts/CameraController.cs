@@ -22,7 +22,7 @@ public class CameraController : MonoBehaviour
         if (target != null)
         {
             newPos.x = target.position.x;
-            newPos.y = 0;
+            newPos.y = target.position.y;
             newPos.z = -10;
             Vector3 translation = Vector3.Lerp(transform.position, newPos, smoothSpeed);
 
