@@ -18,7 +18,8 @@ public class Enemy : MonoBehaviour
     protected Rigidbody2D body;
     protected SpriteRenderer renderer;
     protected Animator anim;
-    protected EnemyState  state;
+    [HideInInspector]
+    public EnemyState  state;
     [SerializeField]
     protected int hitPoints;
     [SerializeField]
@@ -32,7 +33,8 @@ public class Enemy : MonoBehaviour
 
     protected int currentPatrolPoint;
 
-    protected int orientation;
+    [HideInInspector]
+    public int orientation;
 
     protected bool DoDamage;
     protected bool IsFrozen;
@@ -73,7 +75,6 @@ public class Enemy : MonoBehaviour
     {
         //when finish death animation 
         Debug.Log("Im dead");
-        Destroy(transform.parent.gameObject);
         Destroy(gameObject);
     }
 
@@ -81,4 +82,7 @@ public class Enemy : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
     }
+
+    public int GetHitPoints() { return hitPoints; }
+
 }

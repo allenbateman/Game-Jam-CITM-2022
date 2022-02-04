@@ -55,6 +55,7 @@ public class proyectile : MonoBehaviour
         if (collision.transform.tag == "Enemy")
             collision.transform.GetComponent<Enemy>().TakeDamage(damage);
 
-        Destroy(gameObject);
+        if(collision.transform.tag != "Sensor")
+            Destroy(gameObject);
     }
 }

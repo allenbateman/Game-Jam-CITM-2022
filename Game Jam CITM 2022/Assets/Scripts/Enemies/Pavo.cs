@@ -20,7 +20,6 @@ public class Pavo : Enemy
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(state);
         switch (state)
         {
             case EnemyState.IDLE:
@@ -100,5 +99,14 @@ public class Pavo : Enemy
         {
             orientation = 1;
         }
+    }
+
+    protected override void Die()
+    {
+        //when finish death animation 
+        Debug.Log("Im dead");
+        if (transform.parent.gameObject != null)
+            Destroy(transform.parent.gameObject);
+        Destroy(gameObject);
     }
 }
