@@ -9,11 +9,8 @@ public class YellowFlower : Enemy
     Transform sideFirePoint;
     Transform upFirePoint;
     [SerializeField]
-    float bulletForce = 1;
-    [SerializeField]
     float fireRate = 1;
     float currentTime;
-    bool Shooting = false;
     [SerializeField]
     bool VerticalShoot;
 
@@ -35,7 +32,6 @@ public class YellowFlower : Enemy
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(orientation);
         if (orientation == 1)
             gameObject.transform.Rotate( new Vector2(0,-180));
         else if(orientation == -1)
