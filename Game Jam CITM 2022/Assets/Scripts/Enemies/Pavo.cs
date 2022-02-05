@@ -19,8 +19,10 @@ public class Pavo : Enemy
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
+        base.Update();
+
         switch (state)
         {
             case EnemyState.IDLE:

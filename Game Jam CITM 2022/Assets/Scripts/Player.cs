@@ -168,6 +168,43 @@ public class Player : MonoBehaviour
                 }
             }
     }
+
+    public float getDefaultBulletCd()
+    {
+        return defaultBulletCoolDown;
+    }
+
+    public float getDefaultBulletTimer()
+    {
+        return defaultBulletTimer;
+    }
+
+    public float getIceBulletCd()
+    {
+        return iceBulletCoolDown;
+    }
+
+    public float getIceBulletTimer()
+    {
+        return iceBulletTimer;
+    }
+
+    public float getFireBulletCd()
+    {
+        return fireBulletCoolDown;
+    }
+
+    public float getFireBulletTimer()
+    {
+        return fireBulletTimer;
+    }
+
+    public bulletType getCurrentBullet()
+    {
+        return currentBullet;
+    }
+
+
     private void SwapBullet(bulletType type)
     {
         if (bulletSwapTimer <= 0)

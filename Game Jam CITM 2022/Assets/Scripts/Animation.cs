@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Animation
 {
@@ -8,7 +9,9 @@ public class Animation
     private float m_Timer;
     private float m_Time;
     private int m_Index;
+
     private SpriteRenderer m_SR;
+    private Image m_Img;
 
     public Animation(Sprite[] frames, float frameTime, SpriteRenderer sr)
     {
@@ -19,6 +22,17 @@ public class Animation
         m_Timer = 0;
         m_SR = sr;
         m_SR.sprite = m_Frames[0];
+    }
+
+    public Animation(Sprite[] frames, float frameTime, Image img)
+    {
+        m_Frames = frames;
+        m_Time = frameTime;
+
+        m_Index = 0;
+        m_Timer = 0;
+        m_Img = img;
+        m_Img.sprite = m_Frames[0];
     }
 
     public void Update()
@@ -34,7 +48,8 @@ public class Animation
                 m_Index = m_Frames.Length - 1;
             }
 
-            m_SR.sprite = m_Frames[m_Index];
+            if(m_SR) m_SR.sprite = m_Frames[m_Index];
+            if (m_Img) m_Img.sprite = m_Frames[m_Index];
 
             m_Timer = 0;
         }
@@ -49,6 +64,8 @@ public class Animation
     {
         m_Index = 0;
         m_Timer = 0;
-        m_SR.sprite = m_Frames[0];
+
+        if (m_SR) m_SR.sprite = m_Frames[0];
+        if (m_Img) m_Img.sprite = m_Frames[0];
     }
 }

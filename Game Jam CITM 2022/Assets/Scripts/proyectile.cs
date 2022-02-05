@@ -6,7 +6,8 @@ public enum bulletType
 {
     DEFAULT,
     ICE,
-    FIRE
+    FIRE,
+    NONE
 }
 public class proyectile : MonoBehaviour
 {
