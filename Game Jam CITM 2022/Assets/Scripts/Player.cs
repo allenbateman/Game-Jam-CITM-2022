@@ -91,7 +91,7 @@ public class Player : MonoBehaviour
             {
                 Idle();
             }
-             rb.velocity = new Vector2(0, rb.velocity.y);
+             //rb.velocity = new Vector2(0, rb.velocity.y);
             
         }
         if (Input.GetKeyDown("space"))
