@@ -5,11 +5,13 @@ using UnityEngine;
 public class Lever : MonoBehaviour
 {
     public GameObject door;
+    public GameObject secondDoor = null;
     private GameObject player;
     [SerializeField]
     int activationDistance;
     public bool isActive;
     private float distanceToPlayer;
+    public bool hasSecondDoor = false;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -26,6 +28,10 @@ public class Lever : MonoBehaviour
             {
                 isActive = !isActive;
                 door.transform.GetComponent<Door>().UnLock();
+                if(hasSecondDoor)
+                {
+                    secondDoor.transform.GetComponent<Door>().UnLock();
+                }
             }
         }
     }

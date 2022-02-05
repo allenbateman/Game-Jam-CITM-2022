@@ -35,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LEVEL_SELECTION.unity
     guid: 2e56b6a4f039e7f4080e2d85f1e2918d
+  - enabled: 1
+    path: Assets/Scenes/STEAM_NYMPF.unity
+    guid: cdf74c5b79d36794182a76197cffcc7c
+  - enabled: 1
+    path: Assets/Scenes/ICE_NYMPF.unity
+    guid: 76ed3b56ccd7bba4db6dde2e9f7dd0c2
+  - enabled: 1
+    path: Assets/Scenes/FIRE_NYMPF.unity
+    guid: 89bce4b71c4f7c3429e15f43b41f896d
   m_configObjects: {}
