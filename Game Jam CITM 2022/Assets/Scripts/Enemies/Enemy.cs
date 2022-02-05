@@ -41,6 +41,7 @@ public class Enemy : MonoBehaviour
     protected float idleTimer = 0;
 
     protected Animation freezeAnimation;
+    protected float freezeCubeOffsetY = 0.25f;
     [SerializeField]
     protected Sprite[] freezeSprites;
 
@@ -78,7 +79,6 @@ public class Enemy : MonoBehaviour
 
             anim.SetBool("Frozen", true);
             effectObject.gameObject.SetActive(true);
-            effectObject.transform.localPosition = transform.localPosition + Vector3.up * 0.25f;
 
             freezeTimer = 0;
             freezeAnimation.Reset();
@@ -114,6 +114,8 @@ public class Enemy : MonoBehaviour
                 Unfreeze();
             }
         }
+
+        effectObject.transform.localPosition = transform.localPosition + Vector3.up * freezeCubeOffsetY;
     }
 
     protected virtual void Patrol()

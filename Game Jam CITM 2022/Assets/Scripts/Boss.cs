@@ -115,4 +115,9 @@ public class Boss : MonoBehaviour
     {
         // TODO: Do animation
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
 }
