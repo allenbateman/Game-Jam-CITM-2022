@@ -115,7 +115,7 @@ public class Player : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             ShootAnim((int)currentBullet);
-            Shoot();
+            //Shoot();
         }
         if(Input.GetKeyDown("1"))
         {
