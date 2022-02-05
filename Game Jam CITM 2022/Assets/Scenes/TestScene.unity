@@ -355,6 +355,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1442638715, guid: c518c5512d46a5c4e9348803dce2e12d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.48
+      objectReference: {fileID: 0}
     - target: {fileID: 2155024469995450128, guid: c518c5512d46a5c4e9348803dce2e12d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -403,6 +407,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2155024469995450140, guid: c518c5512d46a5c4e9348803dce2e12d, type: 3}
+      propertyPath: proyectile
+      value: 
+      objectReference: {fileID: 551561677667334082, guid: 1ce58e53966690a4f88f86b0966a85e4, type: 3}
+    - target: {fileID: 2155024469995450140, guid: c518c5512d46a5c4e9348803dce2e12d, type: 3}
+      propertyPath: IceProyectile
+      value: 
+      objectReference: {fileID: 2662558239714035585, guid: 86d2869ea852726459466abd1f8cf290, type: 3}
+    - target: {fileID: 2155024469995450140, guid: c518c5512d46a5c4e9348803dce2e12d, type: 3}
+      propertyPath: FireProyectile
+      value: 
+      objectReference: {fileID: 6834702108486863653, guid: 02c9b3b40a0ab1b458341c83b31b3931, type: 3}
+    - target: {fileID: 2155024469995450143, guid: c518c5512d46a5c4e9348803dce2e12d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2504346601611160703, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c518c5512d46a5c4e9348803dce2e12d, type: 3}
 --- !u!1 &498379581
@@ -787,7 +807,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f9a07e5061ffe40b0cafe88f273385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothSpeed: 0.01
 --- !u!1 &929399405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +1427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899914483}
   - component: {fileID: 1899914482}
+  - component: {fileID: 1899914484}
   m_Layer: 0
   m_Name: TestBackGround
   m_TagString: Untagged
@@ -1480,6 +1500,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1899914484
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899914481}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cfee1b5e00ef0d54d8c03dd0696ba22f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1941183015
 GameObject:
   m_ObjectHideFlags: 0

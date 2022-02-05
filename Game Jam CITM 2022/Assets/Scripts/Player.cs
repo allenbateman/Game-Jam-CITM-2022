@@ -39,7 +39,25 @@ public class Player : MonoBehaviour
 
     private bool HasGun = false;
     bool OnAir;
+    bool IsShooting;
+
+    private string currentAnimation;
+
+    private string RUN_ANIMAITON = "Run";
+    private string RUN_GUN_ANIMAITON = "RunGun";
+    private string IDLE_ANIMAITON = "Idle";
+    private string IDLE_GUN_ANIMAITON = "IdleGun";
+    private string SHOT_VAPOR_ANIMAITON = "ShotVapor";
+    private string SHOT_ICE_ANIMAITON = "ShotIce";
+    private string SHOT_FIRE_ANIMAITON = "ShotFire";
+    private string JUMP_ANIMAITON = "Jump";
+    private string DOUBLE_JUMP_ANIMAITON = "DoubleJump";
+    private string RECOVERY_ANIMAITON = "Recovery";
+    private string DEAD_ANIMAITON = "Dead";
     
+
+
+
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -47,6 +65,7 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         firePoint = transform.GetChild(0);
         OnAir = false;
+        IsShooting = false;
         Idle();
 
         HasGun = true;
@@ -91,10 +110,9 @@ public class Player : MonoBehaviour
             {
                 Idle();
             }
-             //rb.velocity = new Vector2(0, rb.velocity.y);
-            
+             rb.velocity = new Vector2(0, rb.velocity.y);           
         }
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") && !IsShooting)
         {
             if (canJump)
             {
@@ -115,7 +133,6 @@ public class Player : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             ShootAnim((int)currentBullet);
-            //Shoot();
         }
         if(Input.GetKeyDown("1"))
         {
@@ -146,7 +163,9 @@ public class Player : MonoBehaviour
             {
                 if(defaultBulletTimer <= 0)
                 {
-                    Instantiate(proyectile, firePoint.position, Quaternion.identity);
+                    GameObject obj = Instantiate(proyectile);
+                    obj.transform.position = firePoint.position;
+                    obj.transform.rotation = transform.rotation;
                     defaultBulletTimer = defaultBulletCoolDown;
                 }
                 
@@ -155,7 +174,10 @@ public class Player : MonoBehaviour
             {
                 if (iceBulletTimer <= 0)
                 {
-                    Instantiate(IceProyectile, firePoint.position, Quaternion.identity);
+
+                    GameObject obj = Instantiate(IceProyectile);
+                    obj.transform.position = firePoint.position;
+                    obj.transform.rotation = transform.rotation;
                     iceBulletTimer = iceBulletCoolDown;
                 }
             }
@@ -163,10 +185,14 @@ public class Player : MonoBehaviour
             {
                 if (fireBulletTimer <= 0)
                 {
-                    Instantiate(FireProyectile, firePoint.position, Quaternion.identity);
+                    GameObject obj = Instantiate(FireProyectile);
+                    obj.transform.position = firePoint.position;
+                    obj.transform.rotation = transform.rotation;
                     fireBulletTimer = fireBulletCoolDown;
                 }
             }
+
+        IsShooting = false;
     }
     private void SwapBullet(bulletType type)
     {
@@ -205,9 +231,15 @@ public class Player : MonoBehaviour
         anim.SetBool("Jump", false);
         anim.SetBool("Shoot", true);
         anim.SetInteger("GunType", type);
+        IsShooting = true;
     }
     private void SetGun()
     {
         anim.SetBool("HasGun", true);
+    }
+
+    void ChangeAnimationState(string newAnimation)
+    {
+        anim.Play(newAnimation);
     }
 }
