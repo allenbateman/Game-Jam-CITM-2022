@@ -57,6 +57,11 @@ public class Enemy : MonoBehaviour
         freezeAnimation = new Animation(freezeSprites, 0.5f, effectObject);
     }
 
+    protected virtual void Update()
+    {
+        
+    }
+
     public void OnBulletHit(proyectile p)
     {
     }
@@ -73,6 +78,7 @@ public class Enemy : MonoBehaviour
 
             anim.SetBool("Frozen", true);
             effectObject.gameObject.SetActive(true);
+            effectObject.transform.localPosition = transform.localPosition + Vector3.up * 0.25f;
 
             freezeTimer = 0;
             freezeAnimation.Reset();
