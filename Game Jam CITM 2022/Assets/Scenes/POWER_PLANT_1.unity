@@ -355,6 +355,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50897d0720daa754797e4b1f8e387748, type: 3}
+--- !u!1 &328665846 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6717370641386390526, guid: 50897d0720daa754797e4b1f8e387748, type: 3}
+  m_PrefabInstance: {fileID: 265636210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &528339214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -368,11 +373,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2155024469995450128, guid: c518c5512d46a5c4e9348803dce2e12d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.19
+      value: 47.91
       objectReference: {fileID: 0}
     - target: {fileID: 2155024469995450128, guid: c518c5512d46a5c4e9348803dce2e12d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.13
+      value: 9.8
       objectReference: {fileID: 0}
     - target: {fileID: 2155024469995450128, guid: c518c5512d46a5c4e9348803dce2e12d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -787,7 +792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784152869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 44.8, y: 11.37, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -805,7 +810,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f9a07e5061ffe40b0cafe88f273385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothSpeed: 1
 --- !u!1001 &801180133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1536,12 +1540,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9135013977200342938, guid: 8071cd3769417264499f0c42d6f66f8a, type: 3}
+      propertyPath: nextScene
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9135013977200342941, guid: 8071cd3769417264499f0c42d6f66f8a, type: 3}
       propertyPath: m_Name
       value: Scene_Door
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8071cd3769417264499f0c42d6f66f8a, type: 3}
+--- !u!1 &1971447119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6717370641386390526, guid: 50897d0720daa754797e4b1f8e387748, type: 3}
+  m_PrefabInstance: {fileID: 321821752}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2040115807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1667,6 +1680,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1146184525, guid: ed32e029fbcf7364baf8e56e931baac5, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 328665846}
     - target: {fileID: 3364514008106800209, guid: ed32e029fbcf7364baf8e56e931baac5, type: 3}
       propertyPath: m_Name
       value: Pressure_Plate (1)
@@ -1842,6 +1859,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1146184525, guid: ed32e029fbcf7364baf8e56e931baac5, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1971447119}
     - target: {fileID: 3364514008106800209, guid: ed32e029fbcf7364baf8e56e931baac5, type: 3}
       propertyPath: m_Name
       value: Pressure_Plate
