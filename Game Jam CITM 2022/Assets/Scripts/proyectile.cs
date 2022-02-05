@@ -53,9 +53,14 @@ public class proyectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "Enemy")
-            collision.transform.GetComponent<Enemy>().TakeDamage(damage);
+            collision.transform.GetComponent<Enemy>().TakeDamage(damage, Type);
 
         if(collision.transform.tag != "Sensor")
             Destroy(gameObject);
+    }
+
+    public bulletType GetBulletType()
+    {
+        return Type;
     }
 }
