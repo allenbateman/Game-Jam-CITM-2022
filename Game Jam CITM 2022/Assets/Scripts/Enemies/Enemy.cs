@@ -31,6 +31,19 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     protected List<Transform> patrolPoints;
 
+    [SerializeField]
+    private SpriteRenderer effectObject;
+
+    protected float freezeTime = 8.0f;
+    protected float freezeTimer = 0;
+
+    protected float idleTime = 2.0f;
+    protected float idleTimer = 0;
+
+    protected Animation freezeAnimation;
+    [SerializeField]
+    protected Sprite[] freezeSprites;
+
     protected int currentPatrolPoint;
 
     [HideInInspector]
@@ -38,6 +51,11 @@ public class Enemy : MonoBehaviour
 
     protected bool DoDamage;
     protected bool IsFrozen;
+
+    protected virtual void Start()
+    {
+        freezeAnimation = new Animation(freezeSprites, 0.5f, effectObject);
+    }
 
     public void OnBulletHit(proyectile p)
     {
@@ -52,7 +70,18 @@ public class Enemy : MonoBehaviour
         if(type == bulletType.ICE)
         {
             state = EnemyState.FROZEN;
+
+            anim.SetBool("Frozen", true);
+            effectObject.gameObject.SetActive(true);
+
+            freezeTimer = 0;
+            freezeAnimation.Reset();
         }
+    }
+
+    protected virtual void Idle()
+    {
+
     }
 
     protected virtual void Move()
@@ -63,6 +92,22 @@ public class Enemy : MonoBehaviour
     protected virtual void Follow()
     {
 
+    }
+
+    protected virtual void Frozen()
+    {
+        body.velocity = Vector2.zero;
+        freezeTimer += Time.deltaTime;
+
+        if (freezeTimer >= freezeTime)
+        {
+            freezeAnimation.Update();
+
+            if (freezeAnimation.Finished())
+            {
+                Unfreeze();
+            }
+        }
     }
 
     protected virtual void Patrol()
@@ -88,5 +133,14 @@ public class Enemy : MonoBehaviour
     }
 
     public int GetHitPoints() { return hitPoints; }
+
+    protected void Unfreeze()
+    {
+        anim.SetBool("Frozen", false);
+        state = EnemyState.IDLE;
+        freezeAnimation.Reset();
+        freezeTimer = 0;
+        effectObject.gameObject.SetActive(false);
+    }
 
 }

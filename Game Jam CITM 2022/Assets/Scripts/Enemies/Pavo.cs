@@ -7,8 +7,9 @@ using UnityEngine;
 public class Pavo : Enemy
 {
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -23,13 +24,14 @@ public class Pavo : Enemy
         switch (state)
         {
             case EnemyState.IDLE:
-                StartCoroutine(Wait(2));
+                Idle();
                 break;
             case EnemyState.PATROL:
                 Move();
                 Patrol();
                 break;
             case EnemyState.FROZEN:
+                Frozen();
                 break;
             case EnemyState.FOLLOW:
                 break;
@@ -40,6 +42,20 @@ public class Pavo : Enemy
                 break;
             default:
                 break;
+        }
+    }
+
+    protected override void Idle()
+    {
+        base.Idle();
+
+        idleTimer += Time.deltaTime;
+
+        if(idleTimer >= idleTime)
+        {
+            state = EnemyState.PATROL;
+            anim.SetBool("Idle", false);
+            anim.SetBool("Patrol", true);
         }
     }
 
@@ -74,6 +90,7 @@ public class Pavo : Enemy
                 currentPatrolPoint = 0;
             }
             state = EnemyState.IDLE;
+            idleTimer = 0;
             anim.SetBool("Idle", true);
             anim.SetBool("Patrol", false);
         }
@@ -83,9 +100,6 @@ public class Pavo : Enemy
     {
 
         yield return new WaitForSeconds(time);
-        state = EnemyState.PATROL;
-        anim.SetBool("Idle", false);
-        anim.SetBool("Patrol", true);
     }
 
     void GetOrientation()
