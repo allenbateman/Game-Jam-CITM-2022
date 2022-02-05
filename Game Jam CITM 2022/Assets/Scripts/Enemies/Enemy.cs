@@ -43,12 +43,16 @@ public class Enemy : MonoBehaviour
     {
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(int amount, bulletType type)
     {
         hitPoints -= amount;
         if (hitPoints <= 0)
             state = EnemyState.DEAD;
 
+        if(type == bulletType.ICE)
+        {
+            state = EnemyState.FROZEN;
+        }
     }
 
     protected virtual void Move()
