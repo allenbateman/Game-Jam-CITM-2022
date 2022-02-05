@@ -9,11 +9,29 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/SCENE_TITLE.unity
+    guid: 349c6f05e33bb9f499a7db2d2c9e5650
+  - enabled: 1
     path: Assets/Scenes/FACTORY_1.unity
     guid: b0e5fc424cbd27c4985dc5ed2a5fbf38
   - enabled: 1
-    path: Assets/Scenes/SCENE_TITLE.unity
-    guid: 349c6f05e33bb9f499a7db2d2c9e5650
+    path: Assets/Scenes/MARKET_1.unity
+    guid: 67a3c08b45bc62b47808c7fca34726ae
+  - enabled: 1
+    path: Assets/Scenes/MARKET_2.unity
+    guid: 5cd41fe0b480e444cb55fc12fd857968
+  - enabled: 1
+    path: Assets/Scenes/POWER_PLANT_1.unity
+    guid: 2741fdf9a4c35d84a8416f457a734651
+  - enabled: 1
+    path: Assets/Scenes/POWER_PLANT_2.unity
+    guid: fd4bee74f67851b45a8e78fc8f6466bd
+  - enabled: 1
+    path: Assets/Scenes/TOWER_1.unity
+    guid: f712200db56fdd147b81b54d8954149c
+  - enabled: 1
+    path: Assets/Scenes/TOWER_2.unity
+    guid: 8ca920fa029d262499f1709cd5f54a02
   - enabled: 1
     path: Assets/Scenes/LEVEL_SELECTION.unity
     guid: 2e56b6a4f039e7f4080e2d85f1e2918d

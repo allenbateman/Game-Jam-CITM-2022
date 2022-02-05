@@ -4,9 +4,11 @@ using UnityEngine;
 
 public enum ELevelList
 {
+    NULL,
     FACTORY,
     MARKET,
-    ENGINE
+    POWER_PLANT,
+    TOWER
 
 }
 
@@ -14,6 +16,6 @@ public static class GameState
 {
   
     public static ELevelList level = ELevelList.FACTORY;
-   
+    public static EScenes scene = EScenes.SCENE_INTRO;
 
 }

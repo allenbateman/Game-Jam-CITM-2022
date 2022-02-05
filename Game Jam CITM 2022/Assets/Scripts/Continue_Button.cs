@@ -19,8 +19,9 @@ public class Continue_Button : MonoBehaviour
 
     public void OnClick()
     {
-        if (GameState.level == ELevelList.FACTORY) SceneManager.LoadScene("Factory_1");
-        if (GameState.level == ELevelList.MARKET) SceneManager.LoadScene("Market_1");
-        if (GameState.level == ELevelList.ENGINE) SceneManager.LoadScene("Engine_1");
+        if (GameState.level == ELevelList.FACTORY) SceneManager.LoadScene("FACTORY_1");
+        if (GameState.level == ELevelList.MARKET) SceneManager.LoadScene("MARKET_1");
+        if (GameState.level == ELevelList.POWER_PLANT) SceneManager.LoadScene("POWER_PLANT_1");
+        if (GameState.level == ELevelList.TOWER) SceneManager.LoadScene("TOWER_1");
     }
 }

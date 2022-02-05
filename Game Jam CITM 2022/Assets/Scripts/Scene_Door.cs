@@ -9,6 +9,7 @@ public class Scene_Door : MonoBehaviour
     private GameObject manager;
     private int activationDistance = 2;
     private float distanceToPlayer;
+    public ELevelList nextLevel = ELevelList.NULL;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -22,7 +23,12 @@ public class Scene_Door : MonoBehaviour
         {
             if (Input.GetKeyDown("e"))
             {
-                manager.transform.GetComponent<Scene_Manager>().LoadNextScene(nextScene);
+                GameState.scene = nextScene;
+                manager.transform.GetComponent<Scene_Manager>().LoadNextScene(nextScene);              
+                if(nextLevel != ELevelList.NULL)
+                {
+                    GameState.level = nextLevel;
+                }
             }
         }
     }
