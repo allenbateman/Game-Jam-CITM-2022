@@ -126,6 +126,7 @@ public class Player : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, speed.y);
                 OnAir = true;
                 canSteamJump = false;
+                DoubleJump();
             }
         }
 
@@ -245,6 +246,7 @@ public class Player : MonoBehaviour
         anim.SetBool("Run", true);
         anim.SetBool("Idle", false);
         anim.SetBool("Jump", false);
+        anim.SetBool("DoubleJump", false);
         anim.SetBool("Shoot", false);
     }
     private void Idle()
@@ -252,6 +254,7 @@ public class Player : MonoBehaviour
         anim.SetBool("Run", false);
         anim.SetBool("Idle", true);
         anim.SetBool("Jump", false);
+        anim.SetBool("DoubleJump", false);
         anim.SetBool("Shoot", false);
     }
     private void Jump()
@@ -259,6 +262,15 @@ public class Player : MonoBehaviour
         anim.SetBool("Run", false);
         anim.SetBool("Idle", false);
         anim.SetBool("Jump", true);
+        anim.SetBool("DoubleJump", false);
+        anim.SetBool("Shoot", false);
+    }
+    private void DoubleJump()
+    {
+        anim.SetBool("Run", false);
+        anim.SetBool("Idle", false);
+        anim.SetBool("Jump", false);
+        anim.SetBool("DoubleJump", true);
         anim.SetBool("Shoot", false);
     }
     private void ShootAnim(int type)
@@ -266,6 +278,7 @@ public class Player : MonoBehaviour
         anim.SetBool("Run", false);
         anim.SetBool("Idle", false);
         anim.SetBool("Jump", false);
+        anim.SetBool("DoubleJump", false);
         anim.SetBool("Shoot", true);
         anim.SetInteger("GunType", type);
         IsShooting = true;

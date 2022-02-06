@@ -12,15 +12,27 @@ public class Lever : MonoBehaviour
     public bool isActive;
     private float distanceToPlayer;
     public bool hasSecondDoor = false;
+
+    [SerializeField]
+    Sprite open, closed;
+
+    SpriteRenderer renderer;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        
+        renderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(isActive)
+        {
+            renderer.sprite = open;
+        }else
+        {
+            renderer.sprite = closed;
+        }
         distanceToPlayer = Vector2.Distance(player.transform.position, gameObject.transform.position);
         if(distanceToPlayer < activationDistance)
         {

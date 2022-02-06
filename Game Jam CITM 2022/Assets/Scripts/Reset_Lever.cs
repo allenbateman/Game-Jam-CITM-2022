@@ -16,10 +16,15 @@ public class Reset_Lever : MonoBehaviour
     int activationDistance;
     //public bool isActive;
     private float distanceToPlayer;
+    [SerializeField]
+    Sprite open, closed;
+
+    SpriteRenderer renderer;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-
+        renderer = GetComponent<SpriteRenderer>();
+        renderer.sprite = closed;
     }
 
     // Update is called once per frame
@@ -38,6 +43,12 @@ public class Reset_Lever : MonoBehaviour
                 lever_01.transform.GetComponent<Lever>().ResetState();
                 lever_02.transform.GetComponent<Lever>().ResetState();
                 lever_03.transform.GetComponent<Lever>().ResetState();
+
+                renderer.sprite = open;
+            }
+            else
+            {
+                renderer.sprite = closed;
             }
         }
     }

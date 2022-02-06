@@ -7,6 +7,7 @@ public class CameraController : MonoBehaviour
     Camera cam;
     Transform target;
     Vector3 newPos;
+
     float smoothSpeed;
 
     Vector3 offset;
@@ -15,8 +16,8 @@ public class CameraController : MonoBehaviour
     {
         cam = GetComponent<Camera>();
         target = FindObjectOfType<Player>().transform;
-        smoothSpeed = 0.1f;
-        offset = new Vector3(5, 3, 0);
+        smoothSpeed = 0.01f;
+        offset = new Vector3(0, 3, 0);
     }
 
     // Update is called once per frame

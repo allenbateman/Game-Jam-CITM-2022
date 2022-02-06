@@ -24,13 +24,13 @@ AnimationClip:
     - time: 0.083333336
       value: {fileID: 1581802883111151506, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
     - time: 0.16666667
-      value: {fileID: 4565581206937760617, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
-    - time: 0.25
-      value: {fileID: -1173568765491961464, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
-    - time: 0.33333334
       value: {fileID: -6245183466769030169, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
+    - time: 0.25
+      value: {fileID: 4371220863788116681, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
+    - time: 0.33333334
+      value: {fileID: 4565581206937760617, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
     - time: 0.41666666
-      value: {fileID: 1902827922711206199, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
+      value: {fileID: -1173568765491961464, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
     - time: 0.5
       value: {fileID: -5203017151606595794, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
     attribute: m_Sprite
@@ -54,10 +54,10 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 3253626627381005987, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
     - {fileID: 1581802883111151506, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
+    - {fileID: -6245183466769030169, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
+    - {fileID: 4371220863788116681, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
     - {fileID: 4565581206937760617, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
     - {fileID: -1173568765491961464, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
-    - {fileID: -6245183466769030169, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
-    - {fileID: 1902827922711206199, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
     - {fileID: -5203017151606595794, guid: 97c8a903e32e9c2419f7d1ec6d47d22d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
@@ -83,11 +83,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.25
-    functionName: Shoot
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

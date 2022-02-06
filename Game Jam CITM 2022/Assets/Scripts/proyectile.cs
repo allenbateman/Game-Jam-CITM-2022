@@ -69,9 +69,8 @@ public class proyectile : MonoBehaviour
             collision.transform.GetComponent<Enemy>().TakeDamage(damage, Type);
             if (Type == bulletType.FIRE)
             {
-                Instantiate(fireEffectPrefab, transform.position, transform.rotation);
+                Instantiate(fireEffectPrefab, collision.transform.position, transform.rotation);
             }
-            Destroy(gameObject);
         }
     }
 

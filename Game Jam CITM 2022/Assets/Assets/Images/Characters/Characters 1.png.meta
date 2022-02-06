@@ -4,40 +4,40 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 7854393496424719828
-    second: idle
+    second: Idle
   - first:
       213: -4100704004991843533
-    second: idle1
+    second: Idle1
   - first:
       213: -4100684612610355271
-    second: idle2
+    second: Idle2
   - first:
       213: -1237103408681587214
-    second: idle3
+    second: Idle3
   - first:
       213: -187146816801939648
-    second: idle4
+    second: Idle4
   - first:
       213: -7421326520367315644
-    second: idle5
+    second: Idle5
   - first:
       213: 2504346601611160703
-    second: idlegun
+    second: IdleGun
   - first:
       213: 3623515696129008617
-    second: idlegun1
+    second: IdleGun1
   - first:
       213: 1878302486200386679
-    second: idlegun2
+    second: IdleGun2
   - first:
       213: -7579590340485833875
-    second: idlegun3
+    second: IdleGun3
   - first:
       213: -5683683836205337224
-    second: idlegun4
+    second: Characters 1_10
   - first:
       213: -2537455842992240648
-    second: idlegun5
+    second: IdleGun4
   - first:
       213: 8854627210679420292
     second: dead
@@ -46,94 +46,94 @@ TextureImporter:
     second: dead1
   - first:
       213: -4970869939431261499
-    second: run
+    second: Run
   - first:
       213: -6147067235338936616
-    second: run1
+    second: Run1
   - first:
       213: 501713222200642446
-    second: run2
+    second: Run2
   - first:
       213: 5829396269976093951
-    second: run3
+    second: Run3
   - first:
       213: -6417772186965252266
-    second: run4
+    second: RunGun
   - first:
       213: 4974923855609692890
-    second: run5
+    second: RunGun1
   - first:
       213: -8366991391701912784
-    second: run6
+    second: RunGun2
   - first:
       213: -3635081036003942444
-    second: run7
+    second: RunGun3
   - first:
       213: 4565581206937760617
-    second: ShotVapor2
+    second: ShootVapor4
   - first:
       213: -1173568765491961464
-    second: ShotVapor3
+    second: ShootVapor5
   - first:
       213: 1902827922711206199
-    second: ShotVapor5
+    second: Characters 1_29
   - first:
       213: 7851086780019132483
-    second: ShotIce
+    second: ShotFire
   - first:
       213: -2062573398006496984
-    second: ShotIce2
-  - first:
-      213: 6047599126440097593
-    second: ShotIce3
-  - first:
-      213: 5691275650376764991
-    second: ShotIce4
-  - first:
-      213: 6942046553940351776
-    second: ShotFire1
-  - first:
-      213: -110909404311391890
     second: ShotFire2
   - first:
-      213: 6415204658427319537
+      213: 6047599126440097593
     second: ShotFire3
   - first:
-      213: 9073741016977734698
+      213: 5691275650376764991
     second: ShotFire4
   - first:
-      213: -6986335576438126717
-    second: Characters 1_50
-  - first:
-      213: -6727464415179570526
-    second: ShotFire5
-  - first:
-      213: -3037044871456988664
-    second: Jump
-  - first:
-      213: 3075746545259236286
-    second: Jump1
-  - first:
-      213: 9064358508136162989
-    second: Jump2
-  - first:
-      213: 1948549724249108524
+      213: 6942046553940351776
     second: Jump3
   - first:
+      213: -110909404311391890
+    second: Characters 1_46
+  - first:
+      213: 6415204658427319537
+    second: Characters 1_47
+  - first:
+      213: 9073741016977734698
+    second: Characters 1_48
+  - first:
+      213: -6986335576438126717
+    second: DoubleJump1
+  - first:
+      213: -6727464415179570526
+    second: DoubleJump2
+  - first:
+      213: -3037044871456988664
+    second: DoubleJump3
+  - first:
+      213: 3075746545259236286
+    second: DoubleJump4
+  - first:
+      213: 9064358508136162989
+    second: DoubleJump5
+  - first:
+      213: 1948549724249108524
+    second: DoubleJump6
+  - first:
       213: -4359206408541158982
-    second: Jump4
+    second: Characters 1_56
   - first:
       213: 4984028242303556150
-    second: Jump5
+    second: Characters 1_57
   - first:
       213: -330613463501544666
-    second: Jump6
+    second: Characters 1_58
   - first:
       213: 2177237203955670702
     second: DoubleJump
   - first:
       213: -7604253316056899002
-    second: DoubleJump6
+    second: Characters 1_67
   - first:
       213: 7065843680675363050
     second: Characters 1_70
@@ -154,46 +154,61 @@ TextureImporter:
     second: Characters 1_102
   - first:
       213: 3253626627381005987
-    second: ShotVapor
+    second: ShootVapor
   - first:
       213: 1581802883111151506
-    second: ShotVapor1
+    second: ShootVapor1
   - first:
       213: 4371220863788116681
-    second: Characters 1_25
+    second: ShootVapor3
   - first:
       213: -6245183466769030169
-    second: ShotVapor4
+    second: ShootVapor2
   - first:
       213: -5203017151606595794
-    second: ShotVapor6
+    second: ShootVapor6
   - first:
       213: 7472431215140366334
-    second: ShotIce1
+    second: ShotIce
   - first:
       213: 3215669620401433478
-    second: Characters 1_31
+    second: ShotIce1
   - first:
       213: 5844708180995255642
-    second: Characters 1_32
+    second: ShotIce2
   - first:
       213: -5158937536409811028
-    second: ShotFire
+    second: ShotIce3
   - first:
       213: 8394222598577327708
-    second: DoubleJump1
+    second: ShotIce4
   - first:
       213: -8580663612330863194
-    second: DoubleJump2
+    second: ShotIce5
   - first:
       213: 5747189117576175419
-    second: DoubleJump4
+    second: ShotFire1
   - first:
       213: 3067031676211082520
-    second: DoubleJump3
+    second: ShotFire5
   - first:
       213: -4569159767509793319
-    second: DoubleJump5
+    second: Jump
+  - first:
+      213: -5656054892410089890
+    second: Jump1
+  - first:
+      213: -2584315631028675564
+    second: Jump2
+  - first:
+      213: -5435636820957150455
+    second: DoubleJump
+  - first:
+      213: -3658179737689471890
+    second: Characters 1_66
+  - first:
+      213: 7776115178241737929
+    second: Characters 1_68
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -283,15 +298,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle
+      name: Idle
       rect:
         serializedVersion: 2
-        x: 57
+        x: 0
         y: 1536
-        width: 69
-        height: 144
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,15 +319,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle1
+      name: Idle1
       rect:
         serializedVersion: 2
-        x: 249
+        x: 192
         y: 1536
-        width: 69
-        height: 147
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,15 +340,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2
+      name: Idle2
       rect:
         serializedVersion: 2
-        x: 441
+        x: 383
         y: 1536
-        width: 69
-        height: 150
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,15 +361,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle3
+      name: Idle3
       rect:
         serializedVersion: 2
-        x: 634
+        x: 576
         y: 1536
-        width: 69
-        height: 144
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,15 +382,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle4
+      name: Idle4
       rect:
         serializedVersion: 2
-        x: 825
+        x: 768
         y: 1536
-        width: 69
-        height: 147
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,15 +403,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle5
+      name: Idle5
       rect:
         serializedVersion: 2
-        x: 1017
+        x: 960
         y: 1536
-        width: 69
-        height: 150
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,15 +424,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idlegun
+      name: IdleGun
       rect:
         serializedVersion: 2
-        x: 57
+        x: 0
         y: 1344
-        width: 78
-        height: 144
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,15 +445,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idlegun1
+      name: IdleGun1
       rect:
         serializedVersion: 2
-        x: 249
+        x: 192
         y: 1344
-        width: 78
-        height: 147
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,15 +466,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idlegun2
+      name: IdleGun2
       rect:
         serializedVersion: 2
-        x: 442
+        x: 384
         y: 1344
-        width: 78
-        height: 150
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,15 +487,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idlegun3
+      name: IdleGun3
       rect:
         serializedVersion: 2
-        x: 633
+        x: 576
         y: 1344
-        width: 78
-        height: 144
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,15 +508,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idlegun4
+      name: Characters 1_10
       rect:
         serializedVersion: 2
-        x: 825
+        x: 768
         y: 1344
-        width: 78
-        height: 147
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -514,15 +529,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idlegun5
+      name: IdleGun4
       rect:
         serializedVersion: 2
-        x: 1017
+        x: 960
         y: 1344
-        width: 78
-        height: 150
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -538,12 +553,12 @@ TextureImporter:
       name: dead
       rect:
         serializedVersion: 2
-        x: 1200
+        x: 1152
         y: 1344
-        width: 96
-        height: 132
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -559,12 +574,12 @@ TextureImporter:
       name: dead1
       rect:
         serializedVersion: 2
-        x: 1422
+        x: 1344
         y: 1344
-        width: 72
-        height: 105
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,15 +592,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run
+      name: Run
       rect:
         serializedVersion: 2
-        x: 39
+        x: 0
         y: 1152
-        width: 111
-        height: 147
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,15 +613,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run1
+      name: Run1
       rect:
         serializedVersion: 2
-        x: 264
+        x: 192
         y: 1152
-        width: 69
-        height: 165
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,15 +634,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run2
+      name: Run2
       rect:
         serializedVersion: 2
-        x: 456
-        y: 1140
-        width: 72
-        height: 177
+        x: 384
+        y: 1152
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -640,15 +655,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run3
+      name: Run3
       rect:
         serializedVersion: 2
-        x: 615
-        y: 1149
-        width: 105
-        height: 150
+        x: 576
+        y: 1152
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -661,15 +676,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run4
+      name: RunGun
       rect:
         serializedVersion: 2
-        x: 810
-        y: 1158
-        width: 126
-        height: 159
+        x: 768
+        y: 1152
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -682,15 +697,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run5
+      name: RunGun1
       rect:
         serializedVersion: 2
-        x: 1035
+        x: 960
         y: 1152
-        width: 78
-        height: 144
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -703,15 +718,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run6
+      name: RunGun2
       rect:
         serializedVersion: 2
-        x: 1191
-        y: 1143
-        width: 105
-        height: 156
+        x: 1152
+        y: 1152
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -724,15 +739,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run7
+      name: RunGun3
       rect:
         serializedVersion: 2
-        x: 1416
-        y: 1140
-        width: 72
-        height: 156
+        x: 1344
+        y: 1152
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -745,13 +760,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotVapor2
+      name: ShootVapor4
       rect:
         serializedVersion: 2
-        x: 426
+        x: 768
         y: 960
-        width: 105
-        height: 165
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -766,15 +781,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotVapor3
+      name: ShootVapor5
       rect:
         serializedVersion: 2
-        x: 618
+        x: 960
         y: 960
-        width: 144
-        height: 165
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -787,15 +802,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotVapor5
+      name: Characters 1_29
       rect:
         serializedVersion: 2
-        x: 1017
+        x: 1344
         y: 960
-        width: 96
-        height: 165
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -808,15 +823,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotIce
+      name: ShotFire
       rect:
         serializedVersion: 2
-        x: 51
-        y: 768
-        width: 84
-        height: 144
+        x: 0
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -829,15 +844,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotIce2
+      name: ShotFire2
       rect:
         serializedVersion: 2
-        x: 432
-        y: 768
-        width: 99
-        height: 156
+        x: 384
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -850,15 +865,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotIce3
+      name: ShotFire3
       rect:
         serializedVersion: 2
-        x: 624
-        y: 768
-        width: 144
-        height: 159
+        x: 576
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -871,15 +886,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotIce4
+      name: ShotFire4
       rect:
         serializedVersion: 2
-        x: 1017
-        y: 768
-        width: 90
-        height: 159
+        x: 768
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -892,15 +907,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotFire1
+      name: Jump3
       rect:
         serializedVersion: 2
-        x: 249
-        y: 576
-        width: 75
-        height: 165
+        x: 576
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -913,15 +928,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotFire2
+      name: Characters 1_46
       rect:
         serializedVersion: 2
-        x: 438
-        y: 576
-        width: 99
-        height: 165
+        x: 768
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -934,15 +949,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotFire3
+      name: Characters 1_47
       rect:
         serializedVersion: 2
-        x: 630
-        y: 576
-        width: 141
-        height: 165
+        x: 960
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -955,15 +970,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotFire4
+      name: Characters 1_48
       rect:
         serializedVersion: 2
-        x: 822
-        y: 576
-        width: 84
-        height: 165
+        x: 1152
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -976,15 +991,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characters 1_50
+      name: DoubleJump1
       rect:
         serializedVersion: 2
-        x: 822
-        y: 696
-        width: 9
-        height: 9
+        x: 192
+        y: 0
+        width: 192
+        height: 384
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -997,15 +1012,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotFire5
+      name: DoubleJump2
       rect:
         serializedVersion: 2
-        x: 1017
-        y: 576
-        width: 90
-        height: 156
+        x: 384
+        y: 0
+        width: 192
+        height: 384
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1018,15 +1033,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump
+      name: DoubleJump3
       rect:
         serializedVersion: 2
-        x: 78
-        y: 384
-        width: 75
-        height: 138
+        x: 576
+        y: 0
+        width: 192
+        height: 384
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1039,15 +1054,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump1
+      name: DoubleJump4
       rect:
         serializedVersion: 2
-        x: 279
-        y: 384
-        width: 75
-        height: 126
+        x: 771
+        y: 0
+        width: 192
+        height: 384
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1060,15 +1075,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump2
+      name: DoubleJump5
       rect:
         serializedVersion: 2
-        x: 450
-        y: 384
-        width: 102
-        height: 150
+        x: 965
+        y: 0
+        width: 192
+        height: 384
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1081,15 +1096,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump3
+      name: DoubleJump6
       rect:
         serializedVersion: 2
-        x: 654
-        y: 384
-        width: 96
-        height: 141
+        x: 1152
+        y: 0
+        width: 192
+        height: 384
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1102,15 +1117,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump4
+      name: Characters 1_56
       rect:
         serializedVersion: 2
-        x: 843
-        y: 384
-        width: 90
-        height: 141
+        x: 1344
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1123,15 +1138,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump5
+      name: Characters 1_57
       rect:
         serializedVersion: 2
-        x: 1029
-        y: 384
-        width: 111
-        height: 141
+        x: 1536
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1144,15 +1159,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump6
+      name: Characters 1_58
       rect:
         serializedVersion: 2
-        x: 1230
-        y: 384
-        width: 84
-        height: 141
+        x: 1728
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1165,36 +1180,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoubleJump
+      name: Characters 1_67
       rect:
         serializedVersion: 2
-        x: 51
-        y: 114
-        width: 90
-        height: 153
+        x: 1536
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eaeda8593b9173e10800000000000000
-      internalID: 2177237203955670702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoubleJump6
-      rect:
-        serializedVersion: 2
-        x: 1206
-        y: 102
-        width: 93
-        height: 165
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1207,141 +1201,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characters 1_70
+      name: ShootVapor
       rect:
         serializedVersion: 2
-        x: 1473
-        y: 198
-        width: 9
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae8f711246bee0260800000000000000
-      internalID: 7065843680675363050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: recovery1
-      rect:
-        serializedVersion: 2
-        x: 1579
-        y: 96
-        width: 111
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f92861342b7fa1d0800000000000000
-      internalID: -3337313403480299016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: recovery2
-      rect:
-        serializedVersion: 2
-        x: 1785
-        y: 96
-        width: 84
-        height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbb871f7f76101280800000000000000
-      internalID: -9074728512302642245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: recovery
-      rect:
-        serializedVersion: 2
-        x: 1398
-        y: 96
-        width: 90
-        height: 99
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e817f014d795a5c70800000000000000
-      internalID: 8960572803104338318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Characters 1_81
-      rect:
-        serializedVersion: 2
-        x: 882
-        y: 87
-        width: 12
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc65723ea60e17300800000000000000
-      internalID: 248226204164249293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Characters 1_102
-      rect:
-        serializedVersion: 2
-        x: 1077
-        y: 0
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a267689aaed263950800000000000000
-      internalID: 6428376004007720490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShotVapor
-      rect:
-        serializedVersion: 2
-        x: 45
+        x: 0
         y: 960
-        width: 90
-        height: 163
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1354,15 +1222,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotVapor1
+      name: ShootVapor1
       rect:
         serializedVersion: 2
-        x: 237
+        x: 192
         y: 960
-        width: 93
-        height: 165
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1375,15 +1243,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characters 1_25
+      name: ShootVapor3
       rect:
         serializedVersion: 2
-        x: 777
-        y: 1129
-        width: 21
-        height: 15
+        x: 576
+        y: 960
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1396,15 +1264,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotVapor4
+      name: ShootVapor2
       rect:
         serializedVersion: 2
-        x: 810
+        x: 384
         y: 960
-        width: 105
-        height: 180
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1417,15 +1285,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotVapor6
+      name: ShootVapor6
       rect:
         serializedVersion: 2
-        x: 1209
+        x: 1152
         y: 960
-        width: 96
-        height: 167
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1438,15 +1306,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotIce1
+      name: ShotIce
       rect:
         serializedVersion: 2
-        x: 243
+        x: 0
         y: 768
-        width: 84
-        height: 159
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1459,15 +1327,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characters 1_31
+      name: ShotIce1
       rect:
         serializedVersion: 2
-        x: 824
-        y: 764
-        width: 110
-        height: 164
+        x: 192
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1480,15 +1348,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characters 1_32
+      name: ShotIce2
       rect:
         serializedVersion: 2
-        x: 816
+        x: 384
         y: 768
-        width: 99
-        height: 164
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1501,15 +1369,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotFire
+      name: ShotIce3
       rect:
         serializedVersion: 2
-        x: 54
-        y: 576
-        width: 81
-        height: 165
+        x: 576
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1522,15 +1390,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoubleJump1
+      name: ShotIce4
       rect:
         serializedVersion: 2
-        x: 228
-        y: 126
-        width: 102
-        height: 135
+        x: 768
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1543,15 +1411,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoubleJump2
+      name: ShotIce5
       rect:
         serializedVersion: 2
-        x: 411
-        y: 90
-        width: 117
-        height: 150
+        x: 960
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1564,15 +1432,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoubleJump4
+      name: ShotFire1
       rect:
         serializedVersion: 2
-        x: 825
-        y: 51
-        width: 105
-        height: 213
+        x: 192
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1585,15 +1453,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoubleJump3
+      name: ShotFire5
       rect:
         serializedVersion: 2
-        x: 633
-        y: 63
-        width: 93
-        height: 204
+        x: 961
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1606,15 +1474,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoubleJump5
+      name: Jump
       rect:
         serializedVersion: 2
-        x: 999
-        y: 0
-        width: 120
-        height: 264
+        x: 0
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1622,6 +1490,111 @@ TextureImporter:
       bones: []
       spriteID: 9d5829f56651790c0800000000000000
       internalID: -4569159767509793319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e49cbda08a181b0800000000000000
+      internalID: -5656054892410089890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cdb0930aaa22cd0800000000000000
+      internalID: -2584315631028675564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903c0de4c1db094b0800000000000000
+      internalID: -5435636820957150455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Characters 1_66
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64cc7219e88b3dc0800000000000000
+      internalID: -3658179737689471890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Characters 1_68
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c44f931e8f4aeb60800000000000000
+      internalID: 7776115178241737929
       vertices: []
       indices: 
       edges: []
